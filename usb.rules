@@ -1,0 +1,5 @@
+SUBSYSTEMS=="usb",\
+ENV{DEVTYPE}=="usb_device",\
+ENV{COLORD_KIND}=="camera",\
+ACTION=="add",\
+RUN="/bin/bash /etc/udev/rules.d/sp/camera.sh"
